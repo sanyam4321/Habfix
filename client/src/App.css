@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+google_login{
+    color: white;
+}
+google_login > p{
+    color: white;
+}
+
+.noScrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background: transparent;
+}
+.noScrollbar::-webkit-scrollbar{
+	width: 0;
+	background: transparent;
+    /* backdrop-filter: blur(20px); */
+    border-radius: 10px;
+}
+.noScrollbar::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.608);
+	background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.customScrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+.customScrollbar::-webkit-scrollbar{
+	width: 12px;
+	background-color: rgba(0, 0, 0, 0.352);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+.customScrollbar::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ffffff35;
+    backdrop-filter: blur(20px);
+}
+
+.customSlideLeft{
+    animation: slideInLeft 500ms forwards;
+}
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+.customSlideRight{
+    animation: slideInRight 500ms forwards;
+}
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+.customSlideUp{
+    animation: slideInUp 500ms forwards;
+}
+    @keyframes slideInUp {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+.customSlideDown{
+    animation: slideInDown 500ms forwards;
+}
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+/* Animation that zoom in once */
+.customZoomIn{
+    animation: zoomIn 500ms ease-in-out;
+}
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+
+/* Animation that zoom out once */
+.customZoomOut{
+    animation: zoomOut 1s forwards;
+}
+    @keyframes zoomOut {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(0);
+        }
+    }
+
+/* Animation that fade in once */
+.customFadeIn{
+    animation: fadeIn 1s forwards;
+}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+/* Animation that fade out once */
+.customFadeOut{
+    animation: fadeOut 1s forwards;
+}
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+/* Animation that fade in and out once */
+.customFadeInOut{
+    animation: fadeInOut 2s forwards;
+}
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
